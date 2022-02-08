@@ -9,6 +9,12 @@
 
             /*comprovacion de la lista*/
             if(in_array($vistas, $listaBlanca)){
+                if(is_file("./vistas/contents/".$vistas."View.php")){
+                    $contenido = "./vistas/contents/".$vistas."View.php";
+                }
+                else{
+                    $contenido = "404";
+                }
 
             }elseif($vistas == "login" || $vistas == "index"){
                 $contenido="login";
