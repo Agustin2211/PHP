@@ -1,0 +1,16 @@
+Como Instalar Laravel: https://todoxampp.com/como-instalar-laravel-en-xampp/ (Al final te indica la direccion para poder
+verlo con XAMPP http://127.0.0.1:8000)
+
+Se ve solamente el arbol de direcciones:
+https://es.stackoverflow.com/questions/244461/laravel-sólo-me-muestra-el-árbol-de-directorios-y-archivos-y-no-la-página-welcome
+
+
+Nuevo Proyecto en Laravel: https://youtu.be/lUrl7ESwgNI?t=268
+				
+			   https://laravel.com/docs/9.x/installation
+
+composer create-project laravel/laravel example-app
+ 
+cd example-app
+ 
+php artisan serve
