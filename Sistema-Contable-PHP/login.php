@@ -20,9 +20,9 @@
     if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) { 
       $_SESSION['user_id'] = $results['id'];
       if($rol == '1'){
-          header('location: admin.php');
+          header('location: /php-login/Administrador/admin.php');
       }else{
-        header('location: colab.php');  
+        header('location: /php-login/Colaborador/colaborador.php');  
       }
 
     } else {
@@ -49,8 +49,8 @@
     <h1>Ingresar</h1>
 
     <form action="login.php" method="POST">
-      <input name="email" type="text" placeholder="Ingrese su Usuario">
-      <input name="password" type="password" placeholder="Ingrese su Contraseña">
+      <input name="email" type="text" placeholder="Ingrese su Usuario" required>
+      <input name="password" type="password" placeholder="Ingrese su Contraseña" required>
       <input type="submit" value="Ingresar">
     </form>
 
@@ -59,4 +59,5 @@
     </form>
     
   </body>
+
 </html>

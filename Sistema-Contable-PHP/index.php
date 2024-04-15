@@ -1,7 +1,8 @@
   
 <?php
+  
   session_start();
-
+  
   require 'database.php';
 
   if (isset($_SESSION['user_id'])) {
@@ -26,6 +27,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
+  
   <body>
 
     <?php if(!empty($user)): ?>
@@ -48,4 +50,5 @@
 
     <?php endif; ?>
   </body>
+
 </html>
